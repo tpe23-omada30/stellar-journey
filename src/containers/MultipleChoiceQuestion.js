@@ -1,5 +1,7 @@
 import { useState } from "react"
 
+import "./MultipleChoiceQuestion.css"
+
 /**
  * A question with 4 choices.
  *
@@ -32,15 +34,17 @@ export default function MultipleChoiceQuestion({ question, A, B, C, D, correct }
 				const isCorrectAnswer = choice !== -1 && i === correct;
 				const isWrongAnswer = choice === i && i !== correct;
 
-				return <div
-					key={i}
-					className={
-						`choice choice-${i}`
-						+ (isCorrectAnswer ? ' choice-correct' : '')
-						+ (isWrongAnswer ? ' choice-wrong' : '')
-					}
-					onClick={() => onChoiceClick(i)}
-				>{text}</div>
+				return <div className="choice-container">
+					<div
+						key={i}
+						className={
+							`choice choice-${i}`
+							+ (isCorrectAnswer ? ' choice-correct' : '')
+							+ (isWrongAnswer ? ' choice-wrong' : '')
+						}
+						onClick={() => onChoiceClick(i)}
+					>{text}</div>
+				</div>
 			})
 		}
 		</div>

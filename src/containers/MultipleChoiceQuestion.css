@@ -1,0 +1,86 @@
+.multiple-choice-question {
+    color: #ffffff;
+}
+
+.multiple-choice-question *::selection {
+    background: none;
+}
+
+.multiple-choice-question .question {
+    width: 100%;
+    box-sizing: border-box;
+
+    border: 2px solid #ffffff;
+    border-radius: 6px;
+    padding: 1.5em 2em;
+
+    margin-bottom: 12px;
+
+    text-align: center;
+}
+
+.multiple-choice-question .choices {
+    width: 100%;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.multiple-choice-question .choice-container {
+    width: 50%;
+    box-sizing: border-box;
+    padding: 8px 8px;
+}
+
+.multiple-choice-question .choice {
+    width: 100%;
+    box-sizing: border-box;
+
+    border: 2px solid #ffffff;
+    border-radius: 4px;
+    padding: 1.5em 2em;
+
+    cursor: pointer;
+}
+
+.choice:hover {
+    background-color: #ffffff11;
+}
+
+.choice:active {
+    color: #000;
+    background-color: #ffffff;
+}
+
+.choice.choice-correct {
+    background-color: #008000;
+}
+
+.choice.choice-wrong {
+    background-color: #a00000;
+}
+
+/* The letter of each choice */
+.choice::before {
+    color: #888;
+    margin-right: 0.75em;
+}
+
+.choice-0::before {
+    content: 'A.';
+}
+
+.choice-1::before {
+    content: 'B.';
+}
+
+.choice-2::before {
+    content: 'C.';
+}
+
+.choice-3::before {
+    content: 'D.';
+}
