@@ -1,0 +1,114 @@
+.question-container {
+    color: #ffffff;
+}
+
+.question-container *::selection {
+    background: none;
+}
+
+.question-container .question {
+    width: 100%;
+    box-sizing: border-box;
+
+    border: 2px solid #ffffff;
+    border-radius: 6px;
+    padding: 1.5em 2em;
+
+    margin-bottom: 12px;
+
+    text-align: center;
+}
+
+/******************* Specific for multiple choice question *******************/
+.multiple-choice-question .choices {
+    width: 100%;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.multiple-choice-question .choice-container {
+    width: 50%;
+    box-sizing: border-box;
+    padding: 8px 8px;
+}
+
+.multiple-choice-question .choice {
+    width: 100%;
+    box-sizing: border-box;
+
+    border: 2px solid #ffffff;
+    border-radius: 4px;
+    padding: 1.5em 2em;
+
+    cursor: pointer;
+}
+
+.multiple-choice-question .choice:hover {
+    background-color: #ffffff11;
+}
+
+.multiple-choice-question .choice:active {
+    color: #000;
+    background-color: #ffffff;
+}
+
+.multiple-choice-question .choice.choice-correct {
+    background-color: #008000;
+}
+
+.multiple-choice-question .choice.choice-wrong {
+    background-color: #a00000;
+}
+
+/* The letter of each choice */
+.multiple-choice-question .choice::before {
+    color: #888;
+    margin-right: 0.75em;
+}
+
+.multiple-choice-question .choice.choice-0::before {
+    content: 'A.';
+}
+
+.multiple-choice-question .choice.choice-1::before {
+    content: 'B.';
+}
+
+.multiple-choice-question .choice.choice-2::before {
+    content: 'C.';
+}
+
+.multiple-choice-question .choice.choice-3::before {
+    content: 'D.';
+}
+
+
+/********************** Specific for position question **********************/
+.planets {
+    display: grid;
+
+    grid-template-columns: repeat(8, 1fr);
+
+    margin-top: 2em;
+}
+
+.planets .numeral {
+    grid-row: 2;
+    text-align: center;
+
+    font-size: 2em;
+    font-weight: 600;
+    padding: 2.5em 0;
+}
+
+.planet {
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    border-radius: 50%;
+    border: 4px solid #ffffff;
+}

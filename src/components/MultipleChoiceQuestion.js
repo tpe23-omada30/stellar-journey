@@ -1,6 +1,6 @@
 import { useState } from "react"
 
-import "./MultipleChoiceQuestion.css"
+import "./question.css"
 
 /**
  * A question with 4 choices.
@@ -27,7 +27,7 @@ export default function MultipleChoiceQuestion({ question, A, B, C, D, correct }
 
 	const choiceTexts = [A, B, C, D];
 
-	return <div className="multiple-choice-question">
+	return <div className="question-container multiple-choice-question">
 		<div className="question">{question}</div>
 		<div className="choices">{
 			choiceTexts.map((text, i) => {
