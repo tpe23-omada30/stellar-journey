@@ -19,6 +19,27 @@
     text-align: center;
 }
 
+.question-container .choice {
+    cursor: pointer;
+}
+
+.question-container .choice:hover {
+    background-color: #ffffff11;
+}
+
+.question-container .choice:active {
+    color: #000;
+    background-color: #ffffff;
+}
+
+.question-container .choice.choice-correct {
+    background-color: #008000;
+}
+
+.question-container .choice.choice-wrong {
+    background-color: #a00000;
+}
+
 /******************* Specific for multiple choice question *******************/
 .multiple-choice-question .choices {
     width: 100%;
@@ -43,25 +64,6 @@
     border: 2px solid #ffffff;
     border-radius: 4px;
     padding: 1.5em 2em;
-
-    cursor: pointer;
-}
-
-.multiple-choice-question .choice:hover {
-    background-color: #ffffff11;
-}
-
-.multiple-choice-question .choice:active {
-    color: #000;
-    background-color: #ffffff;
-}
-
-.multiple-choice-question .choice.choice-correct {
-    background-color: #008000;
-}
-
-.multiple-choice-question .choice.choice-wrong {
-    background-color: #a00000;
 }
 
 /* The letter of each choice */
@@ -100,6 +102,8 @@
     text-align: center;
     font-size: 2em;
     font-weight: 600;
+
+    cursor: pointer;
 }
 
 .planet {
