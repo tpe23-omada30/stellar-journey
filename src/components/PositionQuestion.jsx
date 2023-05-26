@@ -22,8 +22,6 @@ export default function PositionQuestion() {
 					</div>
 				</div>
 			</>))
-		}{
-			PLANETS.map((planet, i) => null)
 		}</div>
 	</div>
 }
