@@ -32,11 +32,7 @@ export default function PlanetQuestion({ planet }) {
 	}
 
 	return <MultipleChoiceQuestion
-		question={question.q}
-		A={question.a[0]}
-		B={question.a[1]}
-		C={question.a[2]}
-		D={question.a[3]}
+		question={question}
 		correct={correct}
 	></MultipleChoiceQuestion>
 }
