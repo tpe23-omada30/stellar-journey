@@ -7,10 +7,8 @@ import "./question.css"
  *
  * @param {object} props
  * @param {import('../data/Questions').Question} props.question The question.
- * @param {number} props.correct The number of the correct choice (0 for A, 1
- * for B, etc).
  */
-export default function MultipleChoiceQuestion({ question, correct }) {
+export default function MultipleChoiceQuestion({ question }) {
 
 	const [choice, setChoice] = useState(-1);
 
@@ -25,8 +23,8 @@ export default function MultipleChoiceQuestion({ question, correct }) {
 		<div className="question">{question.q}</div>
 		<div className="choices">{
 			question.a.map((text, i) => {
-				const isCorrectAnswer = choice !== -1 && i === correct;
-				const isWrongAnswer = choice === i && i !== correct;
+				const isCorrectAnswer = choice !== -1 && i === question.correct;
+				const isWrongAnswer = choice === i && i !== question.correct;
 
 				return <div className="choice-container">
 					<div

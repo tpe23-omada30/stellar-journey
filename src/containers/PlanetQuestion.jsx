@@ -10,9 +10,6 @@ export default function PlanetQuestion({ planet }) {
 	// Pick a random question
 	let question = questions[Math.floor(Math.random() * questions.length)];
 
-	// Used to keep track of the index of the correct answer
-	let correct = 0;
-
 	if (!question.noShuffle){
 		// Shuffle the answers
 		// The algorithm used is the modern version of the Fisher–Yates shuffle
@@ -23,16 +20,15 @@ export default function PlanetQuestion({ planet }) {
 			question.a[i] = question.a[j];
 			question.a[j] = temp;
 			// Keep track of the correct answer
-			if (i === correct){
-				correct = j;
-			} else if (j === correct) {
-				correct = i;
+			if (i === question.correct){
+				question.correct = j;
+			} else if (j === question.correct) {
+				question.correct = i;
 			}
 		}
 	}
 
 	return <MultipleChoiceQuestion
 		question={question}
-		correct={correct}
 	></MultipleChoiceQuestion>
 }
