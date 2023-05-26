@@ -6,7 +6,7 @@ import "./question.css"
  * A question with 4 choices.
  *
  * @param {object} props
- * @param {import('../data/Questions').Question} props.question The question.
+ * @param {import('../data/Questions').MultipleChoiceQuestion} props.question The question.
  */
 export default function MultipleChoiceQuestion({ question }) {
 
