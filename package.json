@@ -1,6 +1,7 @@
 {
   "name": "tpe-website",
   "version": "0.1.0",
+  "homepage": "https://tpe23-omada30.github.io/stellar-journey/",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
