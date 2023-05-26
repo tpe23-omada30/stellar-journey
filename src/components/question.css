@@ -97,12 +97,9 @@
 }
 
 .planets .numeral {
-    grid-row: 2;
     text-align: center;
-
     font-size: 2em;
     font-weight: 600;
-    padding: 2.5em 0;
 }
 
 .planet {

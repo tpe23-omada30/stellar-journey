@@ -8,7 +8,7 @@ export default function PositionQuestion() {
 		<div className="question">Σε ποια θέση βρίσκεται ο [πλανήτης];</div>
 		<div className="planets">{
 			PLANETS.map((planet, i) => (<>
-				<div className="square">
+				<div className="square" style={{gridRow: 1}}>
 					<div className="square-content center">
 						<div className="planet" style={{
 							width: `${SIZES[i]*100}%`,
@@ -16,7 +16,11 @@ export default function PositionQuestion() {
 						}}></div>
 					</div>
 				</div>
-				<div className="numeral">{i+1}</div>
+				<div className="square numeral" style={{gridRow: 2}}>
+					<div className="square-content center">
+						{i+1}
+					</div>
+				</div>
 			</>))
 		}{
 			PLANETS.map((planet, i) => null)
