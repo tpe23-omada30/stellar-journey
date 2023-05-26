@@ -1,4 +1,4 @@
-import MultipleChoiceQuestion from "./MultipleChoiceQuestion";
+import MultipleChoiceQuestion from "../components/MultipleChoiceQuestion";
 
 /**
  * @typedef Question
