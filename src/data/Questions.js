@@ -3,6 +3,7 @@
  * @property {string} q The question.
  * @property {string[]} a The answer choices. The first element should be the
  * correct answer.
+ * @property {boolean} [noShuffle] Whether the choices should be shuffled or not.
  */
 
 /**
@@ -22,13 +23,15 @@ const Questions = {
 		},
 		{
 			q: "Πόσα φεγγάρια έχει η Αφροδίτη;",
-			a: ["0", "1", "2", "3"]
+			a: ["0", "1", "2", "3"],
+			noShuffle: true,
 		}
 	],
 	mars: [
 		{
 			q: "Πόσα φεγγάρια έχει ο Άρης;",
-			a: ["0", "1", "2", "3"]
+			a: ["0", "1", "2", "3"],
+			noShuffle: true,
 		},
 		{
 			q: "Ποιο στοιχείο δίνει στον Άρη κόκκινο χρώμα;",
