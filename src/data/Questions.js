@@ -59,7 +59,7 @@ const Questions = {
 			type: "mc",
 			q: "Πόσα φεγγάρια έχει ο Άρης;",
 			a: ["0", "1", "2", "3"],
-			correct: 0,
+			correct: 2,
 			noShuffle: true,
 		},
 		{
