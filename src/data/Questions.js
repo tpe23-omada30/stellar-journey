@@ -34,6 +34,7 @@ const Questions = {
 			type: "mc",
 			q: "Πόσα φεγγάρια έχει ο Ερμής;",
 			a: ["Κανένα", "Ένα", "Δύο", "Τέσσερα"],
+			correct: 0,
 			noShuffle: true,
 		}
 	],
