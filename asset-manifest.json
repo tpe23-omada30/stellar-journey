@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/stellar-journey/static/css/main.6bcd048d.css",
-    "main.js": "/stellar-journey/static/js/main.4ffbba46.js",
+    "main.js": "/stellar-journey/static/js/main.e828420c.js",
     "index.html": "/stellar-journey/index.html",
     "main.6bcd048d.css.map": "/stellar-journey/static/css/main.6bcd048d.css.map",
-    "main.4ffbba46.js.map": "/stellar-journey/static/js/main.4ffbba46.js.map"
+    "main.e828420c.js.map": "/stellar-journey/static/js/main.e828420c.js.map"
   },
   "entrypoints": [
     "static/css/main.6bcd048d.css",
-    "static/js/main.4ffbba46.js"
+    "static/js/main.e828420c.js"
   ]
 }
