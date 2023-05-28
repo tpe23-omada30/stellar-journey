@@ -8,6 +8,13 @@
  */
 
 /**
+ * @typedef TrueFalseQuestion
+ * @property {"tf"} type The type of the question.
+ * @property {string} q The question.
+ * @property {boolean} correct The correct answer.
+ */
+
+/**
  * @typedef PositionQuestion
  * @property {"pos"} type The type of the question.
  * @property {string} q The question.
@@ -22,7 +29,7 @@
  */
 
 /**
- * @typedef {MultipleChoiceQuestion|PositionQuestion|PicturesQuestion} Question
+ * @typedef {MultipleChoiceQuestion|TrueFalseQuestion|PositionQuestion|PicturesQuestion} Question
  */
 
 /**
