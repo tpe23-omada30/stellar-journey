@@ -15,7 +15,14 @@
  */
 
 /**
- * @typedef {MultipleChoiceQuestion|PositionQuestion} Question
+ * @typedef PicturesQuestion
+ * @property {"pics"} type The type of the question.
+ * @property {string} q The question.
+ * @property {import("../data/Planets").Planet} correct The correct answer.
+ */
+
+/**
+ * @typedef {MultipleChoiceQuestion|PositionQuestion|PicturesQuestion} Question
  */
 
 /**
@@ -44,10 +51,9 @@ const Questions = {
 			q: "Σε ποια θέση βρίσκεται η Αφροδίτη;",
 			position: 1
 		},
-		{	type: "mc",
+		{	type: "pics",
 			q: "Με ποιον πλανήτη μοιάζει περισσότερο η Αφροδίτη;",
-			a: ["Γη", "Άρης", "Ερμής", "Ουρανός"],
-			correct: 0,
+			correct: "earth",
 		},
 		{
 			type: "mc",
@@ -116,10 +122,9 @@ const Questions = {
 			position: 6,
 		},
 		{
-			type: "mc",
+			type: "pics",
 			q: "Με ποιόν πλανήτη μοιάζει περισσότερο ο Ουρανός;",
-			a: ["Ποσειδώνας", "Γη", "Κρόνος", "Ερμής"],
-			correct: 0,
+			correct: "neptune"
 		},
 		{
 			type: "mc",
@@ -135,10 +140,9 @@ const Questions = {
 			position: 7,
 		},
 		{
-			type: "mc",
+			type: "pics",
 			q: "Με ποιόν πλανήτη μοιάζει περισσότερο ο Ποσειδώνας;",
-			a: ["Ουρανός", "Γη", "Κρόνος", "Ερμής"],
-			correct: 0,
+			correct: "uranus",
 		},
 		{
 			type: "mc",

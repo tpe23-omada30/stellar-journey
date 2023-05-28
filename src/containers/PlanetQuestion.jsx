@@ -1,6 +1,7 @@
 import Questions from "../data/Questions";
 import MultipleChoiceQuestion from "../components/MultipleChoiceQuestion";
 import PositionQuestion from "../components/PositionQuestion";
+import PicturesQuestion from "../components/PicturesQuestion";
 
 /**
  * Displays a random question about a specific planet.
@@ -37,6 +38,9 @@ export default function PlanetQuestion({ planet }) {
 
 		case "pos":
 			return <PositionQuestion question={question}></PositionQuestion>
+
+		case "pics":
+			return <PicturesQuestion question={question}></PicturesQuestion>
 	}
 
 }
