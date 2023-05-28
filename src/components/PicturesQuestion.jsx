@@ -3,14 +3,15 @@ import Planets from "../data/Planets";
 
 /**
  * @param {object} props
+ * @param {import("../data/Planets").Planet} props.planet
  * @param {import("../data/Questions").PicturesQuestion} props.question
  */
-export default function PicturesQuestion({ question }) {
+export default function PicturesQuestion({ planet, question }) {
 
     // Calculate the random choices only once
     const [[choices, correctIndex], _] = useState(() => {
-        // Select three random planets (that are not the correct answer)
-        let possiblePlanets = Object.keys(Planets).filter(planet => planet !== question.correct);
+        // Select three random planets (that are not the correct answer or the question planet)
+        let possiblePlanets = Object.keys(Planets).filter(p => p !== question.correct && p !== planet);
         let choices = [];
         for (let i = 0; i < 3; i++){
             let rand = Math.floor(Math.random() * possiblePlanets.length);
