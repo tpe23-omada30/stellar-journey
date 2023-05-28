@@ -1,5 +1,7 @@
 .question-container {
     color: #ffffff;
+
+    padding: 2vw 2vw;
 }
 
 .question-container *::selection {
