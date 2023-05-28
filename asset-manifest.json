@@ -1,13 +1,21 @@
 {
   "files": {
-    "main.css": "/stellar-journey/static/css/main.6848c064.css",
-    "main.js": "/stellar-journey/static/js/main.6bcecd3d.js",
+    "main.css": "/stellar-journey/static/css/main.0371fd92.css",
+    "main.js": "/stellar-journey/static/js/main.d9a32374.js",
+    "static/media/earth.png": "/stellar-journey/static/media/earth.7bcbbe1d80b30eae31f8.png",
+    "static/media/saturn.png": "/stellar-journey/static/media/saturn.3e5d14fed32a7fbe4ad0.png",
+    "static/media/mercury.png": "/stellar-journey/static/media/mercury.996d3aaa5d00924708d9.png",
+    "static/media/neptune.png": "/stellar-journey/static/media/neptune.be032f63f7acc34e4b03.png",
+    "static/media/venus.png": "/stellar-journey/static/media/venus.6f56e2c320663ab9aad2.png",
+    "static/media/mars.png": "/stellar-journey/static/media/mars.faab658ba2f26214c95c.png",
+    "static/media/jupiter.png": "/stellar-journey/static/media/jupiter.04d72045fc40844e693f.png",
+    "static/media/uranus.png": "/stellar-journey/static/media/uranus.c82bd6d25817f6abe93d.png",
     "index.html": "/stellar-journey/index.html",
-    "main.6848c064.css.map": "/stellar-journey/static/css/main.6848c064.css.map",
-    "main.6bcecd3d.js.map": "/stellar-journey/static/js/main.6bcecd3d.js.map"
+    "main.0371fd92.css.map": "/stellar-journey/static/css/main.0371fd92.css.map",
+    "main.d9a32374.js.map": "/stellar-journey/static/js/main.d9a32374.js.map"
   },
   "entrypoints": [
-    "static/css/main.6848c064.css",
-    "static/js/main.6bcecd3d.js"
+    "static/css/main.0371fd92.css",
+    "static/js/main.d9a32374.js"
   ]
 }
