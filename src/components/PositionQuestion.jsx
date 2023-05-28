@@ -29,15 +29,14 @@ export default function PositionQuestion({ question }) {
 				let isCorrectChoice = choice !== -1 && i === question.position;
 				let isWrongChoice = choice === i && i !== question.position;
 
+				const correctnessClass = isCorrectChoice ? "choice-correct"
+					: (isWrongChoice ? "choice-wrong" : "");
+
 				return <>
 				<div className="square" style={{gridRow: 1}}>
 					<div className="square-content center">
 						<div
-							className={
-								"planet choice"
-								+ (isCorrectChoice ? " choice-correct" : "")
-								+ (isWrongChoice ? " choice-wrong" : "")
-							}
+							className={`planet choice ${correctnessClass}`}
 							style={{
 								width: `${SIZES[i]*100}%`,
 								height: `${SIZES[i]*100}%`
@@ -46,7 +45,7 @@ export default function PositionQuestion({ question }) {
 						></div>
 					</div>
 				</div>
-				<div className="square numeral" style={{gridRow: 2}}>
+				<div className={`square numeral ${correctnessClass}`} style={{gridRow: 2}}>
 					<div className="square-content center" onClick={() => handleClick(i)}>
 						{i+1}
 					</div>

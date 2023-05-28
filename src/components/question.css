@@ -113,3 +113,21 @@
     border-radius: 50%;
     border: 4px solid #ffffff;
 }
+
+.planets .planet.choice-correct {
+    border-color: #008000;
+    background-color: #008000aa;
+}
+
+.planets .numeral.choice-correct {
+    color: #008000;
+}
+
+.planets .planet.choice-wrong {
+    border-color: #a00000;
+    background-color: #a00000aa;
+}
+
+.planets .numeral.choice-wrong {
+    color: #a00000;
+}
